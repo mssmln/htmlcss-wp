@@ -56,9 +56,31 @@ header .top-header{
 
 /* /LOGO AND HEADLINE */
 
-header .bottom-header{
-  background-color: lightgray;
+
+/* MENU */
+nav.bottom-header{
+  background-color: gray;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
 }
+
+ul.menu li{
+  display: inline-block;
+}
+
+ul.menu li a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 8px;
+}
+
+
+
+/* /MENU */
+
 
 /* does float: left; make sense below here? */
 .container aside.left-column{
