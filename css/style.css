@@ -82,37 +82,98 @@ ul.menu li a{
 /* /MENU */
 
 
-/* does float: left; make sense below here? */
-.container aside.left-column{
+
+
+
+
+/* LEFT COLUMN */
+
+
+
+main aside.left-column{
   width: 20%;
-  /* background-color: pink; */
+  background-color: white;
   float: left;
+  border-radius: 10px;
 }
 
-.left-column .article{
-  /* width: 100px;
-  height: 100px; */
-  width: auto;
-  height: auto;
-  margin: 5px auto;
-  background-color: blue;
+aside.left-column .feed-icon{
+  float: left;
+  color: orange;
+  padding: 3px;
+  font-size: 30px;
 }
-/* Cristina created a float class rather than as i did */
-.container section.main-content{
+
+aside.left-column .themes{
+  float: left;
+  text-transform: capitalize;
+  padding: 3px;
+}
+
+aside.left-column .themes-links{
+  float: left;
+  list-style: none;
+
+}
+
+ul.themes-links a{
+  float: left;
+  color: green;
+  text-decoration: none;
+  margin: 8px 5px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+
+/* /LEFT COLUMN */
+
+
+
+
+
+
+
+/* MIDDLE COLUMN */
+
+
+
+section.main-content{
   width: 56%;
-  /* background-color: green; */
   margin: 0 2%;
   float: left;
 }
 
 .main-content .article-in-detail{
-  /* width: 100px;
-  height: 100px; */
-  width: auto;
-  height: auto;
   margin: 5px auto;
-  background-color: lightgray;
+  background-color: white;
+  border-radius: 10px;
 }
+
+.main-content .article-in-detail h1{
+  text-transform: uppercase;
+  text-shadow: 2px 0 gray;
+  padding: 20px;
+}
+
+
+
+/* /MIDDLE COLUMN */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* how could i do here for the measurements? */
 .container aside.right-column{
