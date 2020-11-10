@@ -4,5 +4,120 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.clearfix::after{
+  content: '';
+  display: table;
+  clear: both;
+}
 /* /GENERAL RULES */
+
+body{
+  background-image: url('../img/natural-pattern.png');
+}
+
+
+.container{
+  width: 1000px;
+  margin: 10px auto;
+}
+
+/* can i remove width attribute? */
+main{
+  width: 100%;
+  margin: 10px 0;
+}
+
+header .top-header{
+  height: 360px;
+  border: 10px solid white;
+  background-image: url('../img/natural-header.jpg');
+  background-size: cover;
+  position: relative;
+}
+
+/* LOGO AND HEADLINE */
+.top-header .logo{
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top-header h2{
+  text-transform: uppercase;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 110px;
+}
+
+/* /LOGO AND HEADLINE */
+
+header .bottom-header{
+  background-color: lightgray;
+}
+
+/* does float: left; make sense below here? */
+.container aside.left-column{
+  width: 20%;
+  /* background-color: pink; */
+  float: left;
+}
+
+.left-column .article{
+  /* width: 100px;
+  height: 100px; */
+  width: auto;
+  height: auto;
+  margin: 5px auto;
+  background-color: blue;
+}
+/* Cristina created a float class rather than as i did */
+.container section.main-content{
+  width: 56%;
+  /* background-color: green; */
+  margin: 0 2%;
+  float: left;
+}
+
+.main-content .article-in-detail{
+  /* width: 100px;
+  height: 100px; */
+  width: auto;
+  height: auto;
+  margin: 5px auto;
+  background-color: lightgray;
+}
+
+/* how could i do here for the measurements? */
+.container aside.right-column{
+  width: 20%;
+  /* background-color: pink; */
+  float: right;
+}
+aside.right-column .top-box{
+  width: auto;
+  height: auto;
+  margin: 5px auto;
+  background-color: green;
+}
+aside.right-column .middle-box{
+  width: auto;
+  height: auto;
+  margin: 5px auto;
+  background-color: lightgray;
+}
+aside.right-column .bottom-box{
+  width: auto;
+  height: auto;
+  margin: 5px auto;
+  background-color: blue;
+}
+
+.container footer{
+  height: 20%;
+  background-color: red;
+}
