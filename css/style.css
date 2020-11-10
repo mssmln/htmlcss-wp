@@ -105,13 +105,13 @@ aside.left-column .feed-icon{
 }
 
 aside.left-column .themes{
-  float: left;
+  float: right;
   text-transform: capitalize;
   padding: 3px;
 }
 
 aside.left-column .themes-links{
-  float: left;
+  /* float: left; */
   list-style: none;
 
 }
@@ -157,6 +157,13 @@ section.main-content{
 }
 
 
+.main-content .article-in-detail p{
+  padding: 20px;
+  line-height: 30px;
+}
+
+
+
 
 /* /MIDDLE COLUMN */
 
@@ -166,41 +173,57 @@ section.main-content{
 
 
 
+/* RIGHT COLUMN */
 
 
 
-
-
-
-
-
-
-/* how could i do here for the measurements? */
-.container aside.right-column{
+aside.right-column{
   width: 20%;
-  /* background-color: pink; */
   float: right;
 }
-aside.right-column .top-box{
-  width: auto;
-  height: auto;
-  margin: 5px auto;
-  background-color: green;
-}
-aside.right-column .middle-box{
-  width: auto;
-  height: auto;
-  margin: 5px auto;
-  background-color: lightgray;
-}
-aside.right-column .bottom-box{
-  width: auto;
-  height: auto;
-  margin: 5px auto;
-  background-color: blue;
+
+aside.right-column .box{
+  margin: 10px 0;
+  background-color: white;
+  border-radius: 10px;
 }
 
+
+
+aside.right-column .box h2{
+  text-transform: capitalize;
+  padding: 20px;
+  margin: 5px auto;
+}
+
+aside.right-column .box p{
+  line-height: 30px;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+/* /RIGHT COLUMN */
+
+
+
+
+
+/* FOOTER */
+
 .container footer{
-  height: 20%;
+  height: 200px;
   background-color: red;
 }
+
+
+
+
+
+
+
+/* /FOOTER */
